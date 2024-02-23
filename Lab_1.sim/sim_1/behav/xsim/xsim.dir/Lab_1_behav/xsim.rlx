@@ -1,0 +1,12 @@
+
+{ 
+    crc :  3318359843289532522  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 272b2ac6a78f4ab4a84ff7896f27834b --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot Lab_1_behav xil_defaultlib.Lab_1" , 
+    buildDate : "Jun 10 2021" , 
+    buildTime : "19:45:28" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/Lab_1_behav/xsimk\"   \"xsim.dir/Lab_1_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/Lab_1_behav/obj/xsim_1.lnx64.o\" -L\"/home/software/Xilinx/Vivado/2021.1/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 
