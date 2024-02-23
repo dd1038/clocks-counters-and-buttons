@@ -72,7 +72,7 @@ proc create_report { reportName command } {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 2
 set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache ./.Xil/Vivado-165992-ece47/incrSyn
+set_param synth.incrementalSynthesisCache ./.Xil/Vivado-642770-ece47/incrSyn
 set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
@@ -88,7 +88,6 @@ set_property webtalk.parent_dir /home/user/Desktop/Lab1-main/Lab1-main/Lab_1/Lab
 set_property parent.project_path /home/user/Desktop/Lab1-main/Lab1-main/Lab_1/Lab_1.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property board_part digilentinc.com:zybo:part0:2.0 [current_project]
 set_property ip_repo_paths /home/software/digilent [current_project]
 update_ip_catalog
 set_property ip_output_repo /home/user/Desktop/Lab1-main/Lab1-main/Lab_1/Lab_1.cache/ip [current_project]
@@ -110,8 +109,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/user/Desktop/Zybo-Master.xdc
-set_property used_in_implementation false [get_files /home/user/Desktop/Zybo-Master.xdc]
+read_xdc /home/user/Downloads/Zybo-Master.xdc
+set_property used_in_implementation false [get_files /home/user/Downloads/Zybo-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

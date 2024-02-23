@@ -129,10 +129,9 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
   set_param checkpoint.writeSynthRtdsInDcp 1
-  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-165992-ece47/incrSyn
+  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-642770-ece47/incrSyn
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z010clg400-1
-  set_property board_part digilentinc.com:zybo:part0:2.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
@@ -147,7 +146,7 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet /home/user/Desktop/Lab1-main/Lab1-main/Lab_1/Lab_1.runs/synth_1/counter_top.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc /home/user/Desktop/Zybo-Master.xdc
+  read_xdc /home/user/Downloads/Zybo-Master.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

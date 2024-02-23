@@ -2,8 +2,8 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Thu Feb 22 23:19:05 2024
-# Process ID: 388892
+# Start of session at: Fri Feb 23 18:36:49 2024
+# Process ID: 836269
 # Current directory: /home/user/Desktop/Lab1-main/Lab1-main/Lab_1/Lab_1.runs/synth_1
 # Command line: vivado -log counter_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source counter_top.tcl
 # Log file: /home/user/Desktop/Lab1-main/Lab1-main/Lab_1/Lab_1.runs/synth_1/counter_top.vds
